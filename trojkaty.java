@@ -14,6 +14,8 @@ class Trojkaty {
              System.out.println("Trójkąt równoboczny"); 
          }
          // TODO: tutaj trzeba bedzie dopisac inne przypadki
+	 else if (a + b > c && a + c > b && b + c > a)
+	    System.out.println("Z podanych długości boków można utworzyć trójkąt.");
     }
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
