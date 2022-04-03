@@ -10,12 +10,20 @@ class Trojkaty {
      * @param {float} c - Długość trzeciego boku.
      */
     public static void jakiTrojkat(float a, float b, float c){
-         if (a == b && b == c && a == c) {
-             System.out.println("Trójkąt równoboczny"); 
-         }
+         
+	 if (a + b > c && a + c > b && b + c > a) {
+	    System.out.print("Z podanych długości boków można utworzyć ");
+	    if (a == b && b == c && a == c) {
+	      System.out.println("trójkąt równoboczny."); 
+	    }else if (a == b || b == c || a == c) {
+	      System.out.println("trójkąt równoramienny.");
+	    }else if ((a*a)+(b*b)==(c*c) || (a*a)+(c*c)==(b*b) || (a*a)==(b*b)+(c*c)){
+	    System.out.println("trójkąt protokątny.");
+	    }
+      	 }else {
+	   System.out.println("Z podanych długości boków nie można utworzyć trójkąta.");
+	 }
          // TODO: tutaj trzeba bedzie dopisac inne przypadki
-	 else if (a + b > c && a + c > b && b + c > a)
-	    System.out.println("Z podanych długości boków można utworzyć trójkąt.");
     }
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
