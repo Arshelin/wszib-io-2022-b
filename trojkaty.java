@@ -4,9 +4,9 @@
 
 class Trojkaty {
     /**
-     * Główna fnukcja programu.
+     * Główna funkcja programu.
      * @param {float} a - Długość pierwszego boku.
-     * @param {float} b - Długość drugiegio boku.
+     * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
     public static void jakiTrojkat(float a, float b, float c){
@@ -18,7 +18,7 @@ class Trojkaty {
 	    }else if (a == b || b == c || a == c) {
 	      System.out.println("trójkąt równoramienny.");
 	    }else if ((a*a)+(b*b)==(c*c) || (a*a)+(c*c)==(b*b) || (a*a)==(b*b)+(c*c)){
-	    System.out.println("trójkąt protokątny.");
+	    System.out.println("trójkąt prostokątny.");
 	    }
       	 }else {
 	   System.out.println("Z podanych długości boków nie można utworzyć trójkąta.");
