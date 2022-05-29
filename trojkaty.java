@@ -44,8 +44,8 @@ class Trojkaty {
 	if (a < 0 || b < 0 || c < 0) {
 	  System.out.println("Długości boków trójkąta muszą być nieujmene!");
 	  System.exit(2);
+	} else {
+	    jakiTrojkat(a, b, c);
 	}
-
-        jakiTrojkat(a, b, c);
     }
 }
