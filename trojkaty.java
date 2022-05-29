@@ -13,7 +13,7 @@ class Trojkaty {
          
 	 if (a + b > c && a + c > b && b + c > a) {
 	    System.out.print("Z podanych długości boków można utworzyć ");
-	    if (a == b && b == c && a == c) {
+	    if (a == b && b == c) {
 	      System.out.println("trójkąt równoboczny."); 
 	    }else if (a == b || b == c || a == c) {
 	      System.out.println("trójkąt równoramienny.");
