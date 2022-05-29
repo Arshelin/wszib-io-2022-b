@@ -13,20 +13,12 @@ class Trojkaty {
          
 	 if (a + b > c && a + c > b && b + c > a) {
 	    System.out.print("Z podanych długości boków można utworzyć ");
-<<<<<<< HEAD
 	    if (a == b && b == c) {
-	      System.out.println("trójkąt równoboczny."); 
-||||||| ae3f194
-	    if (a == b && b == c && a == c) {
-	      System.out.println("trójkąt równoboczny."); 
-=======
-	    if (a == b && b == c && a == c) {
-	      System.out.println("Trójkąt równoboczny."); 
->>>>>>> feature-rownoramienny
+	      System.out.println("trójkąt równoboczny.");
 	    }else if (a == b || b == c || a == c) {
-	      System.out.println("Trójkąt równoramienny.");
+	      System.out.println("trójkąt równoramienny.");
 	    }else if ((a*a)+(b*b)==(c*c) || (a*a)+(c*c)==(b*b) || (a*a)==(b*b)+(c*c)){
-	    System.out.println("Trójkąt prostokątny.");
+	    System.out.println("trójkąt prostokątny.");
 	    }
       	 }else {
 	   System.out.println("Z podanych długości boków nie można utworzyć trójkąta.");
